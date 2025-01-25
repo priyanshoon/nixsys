@@ -110,7 +110,18 @@
     vim
     tmux
     git
+    grimblast
     wl-clipboard
+    gcc
+    go
+
+    # LLVM Packages
+    llvmPackages_latest.lldb
+    llvmPackages_latest.libllvm
+    llvmPackages_latest.libcxx
+    llvmPackages_latest.clang
+
+    clang-tools
 
     # Shell
     zsh
