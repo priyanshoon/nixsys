@@ -111,6 +111,7 @@
     tmux
     git
     grimblast
+    dunst
     wl-clipboard
     gcc
     go
@@ -131,18 +132,11 @@
     rofi-wayland
     hyprland
 
-    # Browser
-    firefox
-
-    # Text Editor
-    neovim
-
     # Terminal
     pkgs.ghostty
 
     # Tools
-    obs-studio
-    obsidian
+    pavucontrol
     swww
     mpv
     imv
@@ -163,6 +157,8 @@
     proggyfonts
   ];
 
+    # Dynamically linked
+    programs.nix-ld.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

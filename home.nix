@@ -28,11 +28,18 @@
         # # "Hello, world!" when run.
         # pkgs.hello
         pkgs.vscode
+        pkgs.chromium
+        pkgs.obs-studio
         pkgs.nitch
+        pkgs.fd
+        pkgs.jq
         pkgs.gimp
         pkgs.ripgrep
         pkgs.fzf
 
+        pkgs.jdk23
+
+        pkgs.obsidian
         pkgs.pass
 
         # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -84,27 +91,35 @@
         # EDITOR = "emacs";
     };
 
+    home.pointerCursor = {
+        gtk.enable = true;
+        package = pkgs.bibata-cursors;
+        name = "Bibata-Modern-Classic";
+        size = 16;
+    };
+
+
     gtk = {
         enable = true;
         theme = {
-            name = "Gruvbox-Dark";
-            package = pkgs.gruvbox-gtk-theme;
+            name = "Kanagawa-B-LB";
+            package = pkgs.kanagawa-gtk-theme;
         };
         iconTheme = {
-            name = "SolArc-Dark";
-            package = pkgs.solarc-gtk-theme;
+            name = "Papirus-Dark";
+            package = pkgs.papirus-icon-theme;
         };
     };
 
-    qt = {
-        enable = true;
-        platformTheme = {
-            name = "gtk3";
-        };
-        style = {
-            name = "gtk2";
-        };
-    };
+    # qt = {
+    #     enable = true;
+    #     platformTheme = {
+    #         name = "gtk3";
+    #     };
+    #     style = {
+    #         name = "gtk2";
+    #     };
+    # };
 
     programs.zsh = {
         enable = true;
@@ -118,7 +133,14 @@
             theme = "robbyrussell";
         };
         syntaxHighlighting = { enable = true; };
+        profileExtra = ''
+            [[ "$(tty)" == "/dev/tty1" ]] && exec Hyprland 
+        '';
     };
+
+    home.sessionPath = [
+        "$HOME/go/bin"
+    ];
 
     programs.rofi = {
         enable = true;
@@ -181,8 +203,8 @@
                 }
 
                 {
-                    plugin = gruvbox-nvim;
-                    config = "colorscheme gruvbox";
+                    plugin = kanagawa-nvim;
+                    config = "colorscheme kanagawa-dragon";
                 }
 
                 {
@@ -200,10 +222,18 @@
                     config = toLuaFile ./nvim/plugin/telescope.lua;
                 }
 
+                {
+                    plugin = conform-nvim;
+                    config = toLuaFile ./nvim/plugin/conform.lua;
+                }
+
                 vim-fugitive
+                fidget-nvim
                 telescope-fzf-native-nvim
                 cmp_luasnip
                 cmp-nvim-lsp
+                cmp-path
+                cmp-buffer
                 luasnip
                 friendly-snippets
                 lualine-nvim
@@ -220,6 +250,7 @@
                         p.tree-sitter-lua
                         p.tree-sitter-python
                         p.tree-sitter-json
+                        p.tree-sitter-java
                     ]));
                     config = toLuaFile ./nvim/plugin/treesitter.lua;
                 }
@@ -231,7 +262,6 @@
                 ${builtins.readFile ./nvim/plugin/other.lua}
             '';
         };
-
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
 }
