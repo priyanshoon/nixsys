@@ -1,0 +1,51 @@
+{ pkgs, ... }: {
+  nixpkgs.config.allowUnfree = true;
+
+  home.packages = with pkgs; [
+    # Packages in each category are sorted alphabetically
+
+    # Desktop apps
+    imv
+    mpv
+    obs-studio
+    obsidian
+    pavucontrol
+
+    # CLI utils
+    bc
+    brightnessctl
+    cliphist
+    ffmpeg
+    ffmpegthumbnailer
+    fzf
+    grimblast
+    htop
+    ntfs3g
+    mediainfo
+    microfetch
+    playerctl
+    ripgrep
+    showmethekey
+    udisks
+    unzip
+    wget
+    wl-clipboard
+    wlr-randr
+    yt-dlp
+    zip
+
+    # Coding stuff 
+    nodejs
+    ghostty
+    python311
+
+    # WM stuff
+    libsForQt5.xwaylandvideobridge
+    libnotify
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+
+    google-chrome
+
+  ];
+}
