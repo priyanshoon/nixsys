@@ -6,6 +6,7 @@
 		syntaxHighlighting.enable = true;
 		
 		shellAliases = {
+            ls = "ls -la --color";
 			cls = "clear";
 			tmux = "tmux -u";
 			vi = "nvim";
