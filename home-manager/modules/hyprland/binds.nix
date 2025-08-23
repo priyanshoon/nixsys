@@ -15,7 +15,7 @@ in {
 			"$mainMod, F, fullscreen, 0"
 			"$mainMod, P, exec, $menu"
 			"$mainMod, V, exec, ${clipboardScript}/bin/open_clipboard"
-			"$mainMode SHIFT, S, exec, grimblast copy area"
+			"$mainMod SHIFT, S, exec, grimblast copy area"
 			
 			# moving focus
 			"$mainMod, j, movefocus, l"
@@ -49,6 +49,10 @@ in {
 
 			# Scratchpad
 			"$mainMod, S, togglespecialworkspace,  magic"
+
+            # Move/resize windows with mainMod + LMB/RMB and dragging
+            "$mainMod, mouse:272, movewindow"
+            "$mainMod, mouse:273, resizeactive"
 		];
 
 		# Laptop multimedia keys for volume and LCD brightness
