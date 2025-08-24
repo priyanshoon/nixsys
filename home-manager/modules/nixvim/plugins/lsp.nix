@@ -1,4 +1,4 @@
-#  TODO: configure lsp for neovim
+#  FIX: lsp-lines and make error show on the line. 
 {
     programs.nixvim = {
         plugins.fidget.enable = true;
@@ -7,6 +7,7 @@
 
             keymaps = {
                 silent = true;
+
                 lspBuf = {
                     "gd" = "definition";
                     "K" = "hover";
@@ -62,7 +63,16 @@
                     "<S-Tab>" = "nil";
                 };
             };
-
         };
+
+        plugins.lsp-lines.enable = true;
+
+        extraConfigLua = ''
+            vim.diagnostic.config({
+                    virtual_text = false,  -- must be disabled!
+                    underline = true,
+                    signs = true,
+                    })
+        '';
     };
 }

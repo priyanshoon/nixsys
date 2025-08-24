@@ -11,6 +11,15 @@
 
         {
             mode = "n";
+            key = "<C-f>";
+            action = ''<cmd>silent !tmux neww tmux-sessionizer<CR>'';
+            options = {
+                desc = "tmux sessionizer";
+            };
+        }
+
+        {
+            mode = "n";
             key = "<Esc>";
             action = ''<cmd>nohlsearch<CR>'';
             options = {
@@ -82,11 +91,20 @@
         }
 
         {
-            mode = "v";
+            mode = ["n" "v"];
             key = "<leader>y";
-            action = ''[["+y]]'';
+            action = ''"+y'';
             options = {
                 desc = "this is copy pasta";
+            };
+        }
+
+        {
+            mode = "n";
+            key = "<leader>Y";
+            action = ''"+Y'';
+            options = {
+                desc = "idk";
             };
         }
 	];

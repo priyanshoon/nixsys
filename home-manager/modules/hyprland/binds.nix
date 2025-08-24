@@ -1,7 +1,6 @@
 { pkgs, ... }:
 let
 	clipboardScript = pkgs.writeScriptBin "open_clipboard" ''
-	#!/bin/bash
 	cliphist list | wofi -dmenu | cliphist decode | wl-copy && notify-send "Clipboard" "Item copied to clipboard"
 	'';
 in {

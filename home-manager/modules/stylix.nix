@@ -61,6 +61,6 @@
 			light = "Papirus-Light";
 		};
 		
-		image = ../../wallpaper/rick.png;
+		image = ../../wallpaper/anya.png;
 	};
 } 

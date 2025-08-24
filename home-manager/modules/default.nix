@@ -2,6 +2,7 @@
 	imports = [
 		./zsh.nix
 		./hyprland
+        ./mako.nix
 		./starship.nix
 		./stylix.nix
 		./qt.nix
