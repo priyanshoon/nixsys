@@ -9,6 +9,7 @@
     mpv
     obs-studio
     obsidian
+    evince
     pavucontrol
 
     # CLI utils
@@ -38,6 +39,8 @@
     nodejs
     ghostty
     python311
+    libgcc
+    gcc
 
     # WM stuff
     libsForQt5.xwaylandvideobridge
@@ -46,6 +49,6 @@
     xdg-desktop-portal-hyprland
 
     google-chrome
-
+    qbittorrent
   ];
 }

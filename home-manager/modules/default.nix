@@ -3,6 +3,7 @@
 		./zsh.nix
 		./hyprland
         ./mako.nix
+        ./direnv.nix
 		./starship.nix
 		./stylix.nix
 		./qt.nix

@@ -1,4 +1,3 @@
-#  FIX: lsp-lines and make error show on the line. 
 {
     programs.nixvim = {
         plugins.fidget.enable = true;
@@ -12,7 +11,7 @@
                     "gd" = "definition";
                     "K" = "hover";
                     "<leader>vws" = "workspace_symbol";
-                    "<leader>vca" = "code_action";
+                    "<leader>ca" = "code_action";
                     "<leader>vrr" = "references";
                     "<leader>vrn" = "rename";
                     "<C-h>" = "signature_help";
@@ -21,7 +20,13 @@
             };
 
             servers = {
-                gopls.enable = true;
+                gopls = {
+                    enable = true;
+                    settings = {
+                        gofumpt = true;
+                    };
+                };
+
                 pylsp = {
                     settings = {
                         configurationSources = "pycodestyle";
@@ -35,18 +40,49 @@
                 };
                 eslint.enable = true;
                 html.enable = true;
-                ts_ls.enable = true;
+                ts_ls = {
+                    enable = true;
+                    filetypes = [ "typescript" "javascript" ];
+                };
                 clangd.enable = true;
                 nixd.enable = true;
+                astro = {
+                    enable = true;
+                    cmd = [ "astro-ls" "--stdio" ];
+                    filetypes = [ "astro" ];
+                };
             };
+
+            onAttach = ''
+        local autocmd = vim.api.nvim_create_autocmd
+        autocmd("BufWritePre", {
+          pattern = "*.go",
+          callback = function()
+            local params = vim.lsp.util.make_range_params()
+            params.context = { only = { "source.organizeImports" } }
+            local result = vim.lsp.buf_request_sync(0, "textDocument/codeAction", params, 3000)
+            for cid, res in pairs(result or {}) do
+              for _, r in pairs(res.result or {}) do
+                if r.edit then
+                  local enc = (vim.lsp.get_client_by_id(cid) or {}).offset_encoding or "utf-16"
+                  vim.lsp.util.apply_workspace_edit(r.edit, enc)
+                end
+              end
+            end
+            vim.lsp.buf.format { async = false }
+          end,
+        })
+            '';
+
         };
 
         plugins.cmp = {
             enable = true;
             settings = {
                 sources = [
-                    { name = "path"; }
                     { name = "nvim_lsp"; }
+                    { name = "luasnip"; }
+                    { name = "path"; }
                     {
                         name = "buffer";
                         keyword_length = 3;
@@ -65,11 +101,9 @@
             };
         };
 
-        plugins.lsp-lines.enable = true;
-
         extraConfigLua = ''
             vim.diagnostic.config({
-                    virtual_text = false,  -- must be disabled!
+                    virtual_text = true,  -- must be disabled!
                     underline = true,
                     signs = true,
                     })

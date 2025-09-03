@@ -16,6 +16,9 @@
                 nix
                 regex
                 vim
+                astro
+                vue
+                php
             ];
 
             settings = {
