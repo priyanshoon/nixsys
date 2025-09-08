@@ -2,6 +2,7 @@
 	imports = [
 		./audio.nix
 		./locale.nix
+        ./bluetooth.nix
 		./boot.nix
 		./env.nix
 		./home-manager.nix
