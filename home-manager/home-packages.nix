@@ -10,6 +10,7 @@
     obs-studio
     obsidian
     evince
+    gimp3
     pavucontrol
 
     # CLI utils
@@ -24,6 +25,8 @@
     ntfs3g
     mediainfo
     microfetch
+    qmk
+    usbutils
     playerctl
     ripgrep
     showmethekey

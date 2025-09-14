@@ -61,6 +61,6 @@
 			light = "Papirus-Light";
 		};
 		
-		image = ../../wallpaper/anime_anime.png;
+		image = ../../wallpaper/anya.png;
 	};
 } 
