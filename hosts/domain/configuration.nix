@@ -17,6 +17,5 @@
   nixpkgs.config.allowUnfree = true;
   networking.hostName = hostname;
   system.stateVersion = stateVersion; # Did you read the comment?
-
 }
 
