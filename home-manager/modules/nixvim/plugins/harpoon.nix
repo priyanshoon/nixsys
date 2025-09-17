@@ -17,7 +17,7 @@
             }
             {
                 mode = "n";
-                key = "C-e";
+                key = "<C-q>";
                 action.__raw = ''
                 function()
                     local harpoon = require("harpoon")

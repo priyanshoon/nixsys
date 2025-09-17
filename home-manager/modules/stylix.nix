@@ -61,6 +61,6 @@
 			light = "Papirus-Light";
 		};
 		
-		image = ../../wallpaper/anya.png;
+		image = ../../wallpaper/nix-anime.png;
 	};
 } 
