@@ -4,6 +4,7 @@
 		dejavu_fonts
 		nerd-fonts.jetbrains-mono
 		nerd-fonts.mononoki
+        nerd-fonts.fira-mono
 		noto-fonts
 		noto-fonts-lgc-plus
 		texlivePackages.hebrew-fonts
@@ -37,7 +38,7 @@
 			};
 			monospace = {
 				name = "Mononoki Nerd Font";
-				package = pkgs.nerd-fonts.mononoki;
+				package = pkgs.nerd-fonts.fira-mono;
 			};
 			sansSerif = {
 				name = "Noto Sans";
