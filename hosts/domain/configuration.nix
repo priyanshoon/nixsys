@@ -15,6 +15,12 @@
 
   environment.systemPackages = [ pkgs.home-manager ];
   nixpkgs.config.allowUnfree = true;
+
+  services.udev.packages = [
+    pkgs.qmk-udev-rules
+  ];
+
+
   networking.hostName = hostname;
   system.stateVersion = stateVersion; # Did you read the comment?
 }
