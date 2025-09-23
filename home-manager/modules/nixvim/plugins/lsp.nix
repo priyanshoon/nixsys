@@ -44,6 +44,9 @@
                     enable = true;
                     filetypes = [ "typescript" "javascript" ];
                 };
+                phpactor = {
+                    enable = true;
+                };
                 clangd.enable = true;
                 nixd.enable = true;
                 astro = {

@@ -1,10 +1,10 @@
 { pkgs, inputs, ... }: {
 	imports = [ inputs.stylix.homeManagerModules.stylix ];
+    
 	home.packages = with pkgs; [
 		dejavu_fonts
 		nerd-fonts.jetbrains-mono
 		nerd-fonts.mononoki
-        nerd-fonts.fira-mono
 		noto-fonts
 		noto-fonts-lgc-plus
 		texlivePackages.hebrew-fonts
@@ -17,7 +17,7 @@
 	stylix = {
 		enable = true;
 		polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 		targets = {
 			neovim.enable = false;
 			nixvim.enable = false;
@@ -38,7 +38,7 @@
 			};
 			monospace = {
 				name = "Mononoki Nerd Font";
-				package = pkgs.nerd-fonts.fira-mono;
+				package = pkgs.nerd-fonts.mononoki;
 			};
 			sansSerif = {
 				name = "Noto Sans";

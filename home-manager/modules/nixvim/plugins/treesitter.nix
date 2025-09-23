@@ -25,5 +25,14 @@
                 highlight.enable = true;
             };
         };
+
+        plugins.treesitter-context = {
+            enable = true;
+            settings = {
+                line_numbers = true;
+                multiline_threshold = 4;
+                max_lines = 2;
+            };
+        };
     };
 }
