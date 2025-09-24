@@ -5,6 +5,7 @@
             grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
                 bash
                 python
+                html
                 c
                 cpp
                 go

@@ -39,7 +39,10 @@
                     enable = true;
                 };
                 eslint.enable = true;
-                html.enable = true;
+                emmet_ls = {
+                    enable = true;
+                    filetypes = [ "html" "php" "astro" ];
+                };
                 ts_ls = {
                     enable = true;
                     filetypes = [ "typescript" "javascript" ];
