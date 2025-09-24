@@ -24,6 +24,10 @@
 			waybar.enable = false;
 			wofi.enable = false;
 			hyprland.enable = false;
+            firefox = {
+                enable = true;
+                profileNames = [ "ybz00pzr.default" ];
+            };
 		};
 		cursor = {
 			name = "Banana";

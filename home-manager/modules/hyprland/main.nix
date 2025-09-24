@@ -59,9 +59,9 @@
         enabled = false;
       };
 
-      gestures = {
-        workspace_swipe = false;
-      };
+      # gestures = {
+      #   workspace_swipe = false;
+      # };
 
       master = {
         new_status = "master";

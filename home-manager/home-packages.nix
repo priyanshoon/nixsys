@@ -26,6 +26,7 @@
     mediainfo
     microfetch
     qmk
+    fd
     usbutils
     playerctl
     ripgrep
@@ -47,7 +48,7 @@
     gcc
 
     # WM stuff
-    libsForQt5.xwaylandvideobridge
+    kdePackages.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
