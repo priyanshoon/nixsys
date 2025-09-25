@@ -9,7 +9,7 @@
         height = 30;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["hyprland/window"];
-        modules-right = ["custom/weather" "pulseaudio" "battery" "clock" "tray"];
+        modules-right = ["pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -26,7 +26,7 @@
             "7" = "";
             "8" = "";
             "9" = "";
-            "magic" = "";
+            "magic" = "󱡄";
           };
 
           persistent-workspaces = {

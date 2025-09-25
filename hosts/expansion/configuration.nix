@@ -8,6 +8,7 @@
 	];
 
 	environment.systemPackages = [ pkgs.home-manager ];
+    nixpkgs.config.allowUnfree = true;
 	networking.hostName = hostname;
 	system.stateVersion = stateVersion;
 }
