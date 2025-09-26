@@ -41,15 +41,15 @@
                 eslint.enable = true;
                 emmet_ls = {
                     enable = true;
-                    filetypes = [ "html" "php" "astro" ];
+                    filetypes = [ "html" "astro" ];
                 };
                 ts_ls = {
                     enable = true;
                     filetypes = [ "typescript" "javascript" ];
                 };
-                phpactor = {
-                    enable = true;
-                };
+                # phpactor = {
+                #     enable = true;
+                # };
                 clangd.enable = true;
                 nixd.enable = true;
                 astro = {
