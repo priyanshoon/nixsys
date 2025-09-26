@@ -47,8 +47,8 @@
           format-muted = " ";
           format-icons = {
             "headphones" = "";
-            "handsfree" = "";
-            "headset" = "";
+            "handsfree" = "";
+            "headset" = "";
             "phone" = "";
             "portable" = "";
             "car" = "";
