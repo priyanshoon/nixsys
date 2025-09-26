@@ -5,6 +5,7 @@
         ./mako.nix
         ./direnv.nix
 		./starship.nix
+        ./obsidian.nix
 		./stylix.nix
 		./qt.nix
 		./waybar
