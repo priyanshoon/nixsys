@@ -18,6 +18,7 @@
 
       "$mainMod" = "SUPER";
       "$terminal" = "ghostty";
+      "$browser" = "brave";
       "$menu" = "wofi --show drun";
 
       exec-once = [

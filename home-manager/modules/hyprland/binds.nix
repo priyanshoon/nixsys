@@ -8,6 +8,7 @@ in {
 	wayland.windowManager.hyprland.settings = {
 		bind = [
 			"$mainMod, Return, exec, $terminal"
+            "$mainMod, B, exec, $browser"
 			"$mainMod, Q, killactive,"
 			"$mainMod, M, exit,"
 			"$mainMod, Space, togglefloating,"
