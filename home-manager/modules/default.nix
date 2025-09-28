@@ -3,6 +3,7 @@
 		./zsh.nix
 		./hyprland
         ./mako.nix
+        ./brave.nix
         ./direnv.nix
 		./starship.nix
         ./obsidian.nix
@@ -15,7 +16,6 @@
 		./nixvim
 		./wofi
 		./git.nix
-		./chromium.nix
 	];
 }
 
