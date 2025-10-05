@@ -10,7 +10,7 @@ in {
 			"$mainMod, Return, exec, $terminal"
             "$mainMod, B, exec, $browser"
 			"$mainMod, Q, killactive,"
-			"$mainMod, M, exit,"
+			"$mainMod SHIFT, Q, exit,"
 			"$mainMod, Space, togglefloating,"
 			"$mainMod, F, fullscreen, 0"
 			"$mainMod, P, exec, $menu"

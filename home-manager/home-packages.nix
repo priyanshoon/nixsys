@@ -8,6 +8,7 @@
     imv
     mpv
     obs-studio
+    signal-desktop
     obsidian
     evince
     gimp3
