@@ -17,7 +17,7 @@
 	stylix = {
 		enable = true;
 		polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
 		targets = {
 			neovim.enable = false;
 			nixvim.enable = false;
@@ -66,6 +66,6 @@
 			light = "Papirus-Light";
 		};
 		
-		image = ../../wallpaper/nix-anime.png;
+		image = ../../wallpaper/nix.jpg;
 	};
 } 

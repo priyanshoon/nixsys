@@ -1,14 +1,21 @@
 {
     programs.nixvim = {
-        colorschemes.gruvbox = {
+        # colorschemes.gruvbox = {
+        #     enable = true;
+        #     settings = {
+        #         terminal_colors = true;
+        #         dim_inactive = true;
+        #         transparent_mode = true;
+        #     };
+        # };
+
+        colorschemes.gruvbox-material = {
             enable = true;
             settings = {
-                terminal_colors = true;
-                dim_inactive = true;
-                transparent_mode = true;
+                transparent_background = 2;
             };
         };
 
-        # plugins.lualine.enable = true;
+        plugins.lualine.enable = true;
     };
 }

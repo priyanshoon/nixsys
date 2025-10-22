@@ -1,7 +1,6 @@
 window {
   margin: 0px;
   border: 5px solid;
-  border-image: linear-gradient(135deg, #d65d0e 0%, #98971a 100%) 1;
   background-color: #282828;
   font-family: "Mononoki Nerd Font";
   font-weight: bold;
@@ -39,6 +38,5 @@ window {
 }
 
 #entry:selected {
-  background-color: #d65d0e;
   color: #ffffff;
 }

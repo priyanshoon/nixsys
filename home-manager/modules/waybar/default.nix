@@ -1,83 +1,100 @@
 {
-  programs.waybar = {
-    enable = true;
-    style = ./style.css;
-    settings = {
-      mainBar = {
-        layer = "top";
-        position = "top";
-        height = 30;
-        modules-left = ["hyprland/workspaces"];
-        modules-center = ["hyprland/window"];
-        modules-right = ["pulseaudio" "battery" "clock" "tray"];
-        "hyprland/workspaces" = {
-          disable-scroll = true;
-          show-special = true;
-          special-visible-only = true;
-          all-outputs = false;
-          format = "{icon}";
-          format-icons = {
-            "1" = "";
-            "2" = "";
-            "3" = "";
-            "4" = "";
-            "5" = "";
-            "6" = "";
-            "7" = "";
-            "8" = "";
-            "9" = "";
-            "magic" = "󱡄";
-          };
+    programs.waybar = {
+        enable = true;
+        style = ./style.css;
+        settings = {
+            mainBar = {
+                layer = "top";
+                position = "top";
+                modules-left = [
+                    "hyprland/workspaces"
+                    "cpu"
+                ];
+                modules-center = [
+                    "clock"
+                ];
+                modules-right = [
+                    "bluetooth"
+                    "network"
+                    "memory"
+                    "pulseaudio"
+                    "battery"
+                ];
 
-          persistent-workspaces = {
-            "*" = 9;
-          };
-        };
+                "hyprland/workspaces" = {
+                    format = "{name}: {icon}";
+                    format-icons = {
+                        active = " ";
+                        default = " ";
+                    };
+                };
 
-        "custom/weather" = {
-          format = " {} ";
-          exec = "curl -s 'wttr.in/Asansol?format=%c%t'";
-          interval = 300;
-          class = "weather";
-        };
+                "bluetooth" = {
+                    format = "󰂲 ";
+                    format-on = "{icon}";
+                    format-off = "{icon}";
+                    format-connected = "{icon}";
+                    format-icons = {
+                        "on" = "󰂯 ";
+                        "off" = "󰂲 ";
+                        "connected" = "󰂱 ";
+                    };
+                    on-click = "blueman-manager";
+                    tooltip-format-connected = "{device_enumerate";
+                };
 
-        "pulseaudio" = {
-          format = "{icon} {volume}%";
-          format-bluetooth = "{icon} {volume}% ";
-          format-muted = " ";
-          format-icons = {
-            "headphones" = "";
-            "handsfree" = "";
-            "headset" = "";
-            "phone" = "";
-            "portable" = "";
-            "car" = "";
-            "default" = [" " " "];
-          };
-          on-click = "pavucontrol";
-        };
+                "clock" = {
+                    timezone = "Asia/Kolkata";
+                    tooltip = false;
+                    format = "{:%H:%M:%S  -  %A, %d}";
+                    interval = 1;
+                };
 
-        "battery" = {
-          states = {
-            warning = 30;
-            critical = 1;
-          };
-          format = "{icon} {capacity}%";
-          format-charging = " {capacity}%";
-          format-alt = "{time} {icon}";
-          format-icons = ["" "" "" "" ""];
-        };
+                "network" = {
+                    format-wifi = "󰤢 ";
+                    format-ethernet = "󰈀 ";
+                    format-disconnected = "󰤠 ";
+                    interval = 5;
+                    tooltip-format = "{essid} ({signalStrength}%)";
+                    on-click = "nm-connection-editor";
+                };
 
-        "clock" = {
-          format = "{:%d.%m.%Y - %H:%M}";
-          format-alt = "{:%A, %B %d at %R}";
-        };
+                "cpu" = {
+                    interval = 1;
+                    format = "  {icon0}{icon1}{icon2}{icon3} {usage:>2}%";
+                    format-icons = [ "▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
+                    on-click = "ghostty -e htop";
+                };
 
-        "tray" = {
-          icon-size = 14;
-          spacing = 1;
+                "memory" = {
+                    interval = 30;
+                    format = "  {used:0.1f}G/{total:0.1f}G";
+                    tooltip-format = "Memory";
+                };
+
+                "pulseaudio" = {
+                    format = "{icon} {volume}%";
+                    format-muted = " ";
+                    format-icons = {
+                        default = ["" " " " "];
+                    };
+                    on-click = "pavucontrol";
+                };
+
+                "battery" = {
+                    interval = 2;
+                    states = {
+                        warning = 30;
+                        critical = 15;
+                    };
+                    format = "{icon} {capacity}%";
+                    format-full= "{icon}  {capacity}%";
+                    format-charging= " {capacity}%";
+                    format-plugged= " {capacity}%";
+                    format-alt= "{icon} {time}";
+                    format-icons= [" " " " " " " " " "];
+                };
+            };
         };
-      };
     };
-  };
 }

@@ -52,7 +52,7 @@
         };
 
         blur = {
-          enabled = false;
+          enabled = true;
         };
       };
 
