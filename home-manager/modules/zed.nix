@@ -6,9 +6,9 @@
     userSettings = {
       vim_mode = true;
       relative_line_numbers = true;
-      buffer_font_family = "Mononoki Nerd Font";
+      buffer_font_family = lib.mkForce "JetBrainsMono Nerd Font";
       terminal = {
-          font_family = "Mononoki Nerd Font";
+          font_family = lib.mkForce "JetBrainsMono Nerd Font";
       };
       inlay_hints = {
         enabled = true;
@@ -42,7 +42,7 @@
     themes = {
       mode = "system";
       light = "One Light";
-      dark = "Gruvbox Dark";
+      dark = "Gruvbox Material";
     };
   };
 }

@@ -8,7 +8,7 @@
 			theme = "Gruvbox Dark Hard";
 			font-family = "JetBrainsMono Nerd Font";
 			font-size = 18;
-            background-opacity = 0.94;
+            background-opacity = 0.9;
 		};
 	};
 }
