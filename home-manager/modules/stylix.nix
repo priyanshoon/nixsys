@@ -66,6 +66,6 @@
 			light = "Papirus-Light";
 		};
 		
-		image = ../../wallpaper/blue.png;
+		image = ../../wallpaper/lain.jpg;
 	};
 } 

@@ -16,13 +16,13 @@ in {
 			"$mainMod, P, exec, $menu"
 			"$mainMod, V, exec, ${clipboardScript}/bin/open_clipboard"
 			"$mainMod SHIFT, S, exec, grimblast copy area"
-			
+
 			# moving focus
 			"$mainMod, j, movefocus, l"
 			"$mainMod, right, movefocus, r"
 			"$mainMod, k, movefocus, u"
 			"$mainMod, down, movefocus, d"
-		
+
 			# switching workspace
 			"$mainMod, 1, workspace, 1"
 			"$mainMod, 2, workspace, 2"
@@ -50,9 +50,14 @@ in {
 			# Scratchpad
 			"$mainMod, S, togglespecialworkspace,  magic"
 
-            # Move/resize windows with mainMod + LMB/RMB and dragging
-            "$mainMod, mouse:272, movewindow"
-            "$mainMod, mouse:273, resizeactive"
+            # # Move/resize windows with mainMod + LMB/RMB and dragging
+            # "$mainMod, mouse:272, movewindow"
+            # "$mainMod, mouse:273, resizeactive"
+		];
+
+		bindm =  [
+		    "$mainMod, mouse:272, movewindow"
+		    "$mainMod, mouse:273, resizeactive"
 		];
 
 		# Laptop multimedia keys for volume and LCD brightness
@@ -72,5 +77,5 @@ in {
 				", XF86AudioPlay,  exec, playerctl play-pause"
 				", XF86AudioPrev,  exec, playerctl previous"
 		];
-	}; 
+	};
 }
