@@ -1,7 +1,11 @@
 {
   programs.git = {
     enable = true;
-    userName = "Priyanshu Prasad Gupta";
-    userEmail = "priyanshoon.pg@gmail.com";
+    settings = {
+        user = {
+            email = "priyanshoon.pg@gmail.com";
+            name = "Priyanshu Gupta";
+        };
+    };
   };
 }

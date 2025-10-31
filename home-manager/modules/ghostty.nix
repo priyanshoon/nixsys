@@ -2,13 +2,13 @@
 	programs.ghostty = {
 		enable = true;
 		settings = {
-            background = "#181818";
+            # background = "#181818";
             cursor-style = "block";
             shell-integration-features = "no-cursor";
-			theme = "Gruvbox Dark Hard";
+			theme = "Solarized Dark Patched";
 			font-family = "JetBrainsMono Nerd Font";
 			font-size = 18;
-            background-opacity = 0.9;
+            # background-opacity = 0.9;
 		};
 	};
 }

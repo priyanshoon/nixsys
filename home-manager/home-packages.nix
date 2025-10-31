@@ -49,7 +49,6 @@
     gcc
 
     # WM stuff
-    kdePackages.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland

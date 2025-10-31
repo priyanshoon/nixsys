@@ -1,13 +1,17 @@
 {
     programs.nixvim = {
-        colorschemes.gruvbox = {
+        colorschemes.solarized-osaka = {
             enable = true;
-            settings = {
-                terminal_colors = true;
-                dim_inactive = true;
-                transparent_mode = true;
-            };
         };
+
+        # colorschemes.gruvbox = {
+        #     enable = true;
+        #     settings = {
+        #         terminal_colors = true;
+        #         dim_inactive = true;
+        #         transparent_mode = true;
+        #     };
+        # };
 
         # colorschemes.gruvbox-material = {
         #     enable = true;
@@ -16,6 +20,6 @@
         #     };
         # };
 
-        plugins.lualine.enable = true;
+        plugins.lualine.enable = false;
     };
 }

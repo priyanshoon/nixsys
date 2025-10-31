@@ -40,6 +40,7 @@
       };
     };
     themes = {
+        # this is my comment
       mode = "system";
       light = "One Light";
       dark = "Gruvbox Material";
