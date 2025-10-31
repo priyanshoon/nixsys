@@ -1,4 +1,4 @@
-{
+{ lib, ... }: {
 	programs.ghostty = {
 		enable = true;
 		settings = {
@@ -6,7 +6,8 @@
             cursor-style = "block";
             shell-integration-features = "no-cursor";
 			theme = "Solarized Dark Patched";
-			font-family = "JetBrainsMono Nerd Font";
+			# font-family = "JetBrainsMono Nerd Font";
+            font-family = lib.mkForce "Mononoki Nerd Font";
 			font-size = 18;
             # background-opacity = 0.9;
 		};

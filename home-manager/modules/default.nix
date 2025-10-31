@@ -1,7 +1,6 @@
 {
 	imports = [
 		./zsh.nix
-        ./zed.nix
 		./hyprland
         ./mako.nix
         ./brave.nix
