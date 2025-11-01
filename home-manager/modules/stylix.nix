@@ -66,6 +66,6 @@
 			light = "Papirus-Light";
 		};
 		
-		image = ../../wallpaper/sola.png;
+		image = ../../wallpaper/consumer_death.png;
 	};
 } 
