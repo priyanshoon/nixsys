@@ -67,6 +67,6 @@
 			light = "Papirus-Light";
 		};
 		
-		image = ../../wallpaper/consumer_death.png;
+		image = ../../wallpaper/razi.png;
 	};
 } 
