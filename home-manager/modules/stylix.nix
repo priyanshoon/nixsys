@@ -19,6 +19,7 @@
 		polarity = "dark";
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/solarized-dark.yaml";
 		targets = {
+			emacs.enable = false;
 			neovim.enable = false;
 			nixvim.enable = false;
 			waybar.enable = false;

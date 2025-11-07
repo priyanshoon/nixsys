@@ -26,6 +26,9 @@
     ntfs3g
     mediainfo
     microfetch
+    inetutils
+    man-db
+    man-pages
     qmk
     fd
     usbutils

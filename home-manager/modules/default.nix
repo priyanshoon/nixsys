@@ -2,6 +2,7 @@
 	imports = [
 		./zsh.nix
 		./hyprland
+        ./zed.nix
         ./emacs.nix
         ./mako.nix
         ./brave.nix
