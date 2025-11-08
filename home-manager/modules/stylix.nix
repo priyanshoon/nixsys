@@ -17,7 +17,7 @@
 	stylix = {
 		enable = true;
 		polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/solarized-dark.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark.yaml";
 		targets = {
 			emacs.enable = false;
 			neovim.enable = false;
@@ -67,6 +67,6 @@
 			light = "Papirus-Light";
 		};
 		
-		image = ../../wallpaper/razi.png;
+		image = ../../wallpaper/makimaXdeath.png;
 	};
 } 
