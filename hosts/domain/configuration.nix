@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./layout.nix
       ./local-packages.nix
       ./nvidia-driver.nix
       ../../nixos/modules
@@ -24,4 +25,3 @@
   networking.hostName = hostname;
   system.stateVersion = stateVersion; # Did you read the comment?
 }
-

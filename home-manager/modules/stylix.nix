@@ -1,6 +1,10 @@
 { pkgs, inputs, ... }: {
 	imports = [ inputs.stylix.homeManagerModules.stylix ];
-    
+
+    fonts.fontconfig = {
+        enable = true;
+    };
+
 	home.packages = with pkgs; [
 		dejavu_fonts
 		nerd-fonts.jetbrains-mono
@@ -59,14 +63,14 @@
 				applications = 11;
 			};
 		};
-		
+
 		iconTheme = {
 			enable = true;
 			package = pkgs.papirus-icon-theme;
 			dark = "Papirus-Dark";
 			light = "Papirus-Light";
 		};
-		
+
 		image = ../../wallpaper/makimaXdeath.png;
 	};
-} 
+}
