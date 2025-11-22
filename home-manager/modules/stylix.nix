@@ -71,6 +71,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/makimaXdeath.png;
+		image = ../../wallpaper/wallpaper.png;
 	};
 }
