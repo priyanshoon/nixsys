@@ -24,8 +24,8 @@
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark.yaml";
 		targets = {
 			emacs.enable = false;
-			neovim.enable = false;
-			nixvim.enable = false;
+			# neovim.enable = true;
+			# nixvim.enable = false;
 			waybar.enable = false;
 			wofi.enable = false;
 			hyprland.enable = false;

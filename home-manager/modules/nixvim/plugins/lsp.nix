@@ -50,7 +50,9 @@
                 # phpactor = {
                 #     enable = true;
                 # };
-                clangd.enable = true;
+                clangd = {
+                    enable = true;
+                };
                 nixd.enable = true;
                 astro = {
                     enable = true;
