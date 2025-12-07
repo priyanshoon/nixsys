@@ -8,6 +8,8 @@
 	home.packages = with pkgs; [
 		dejavu_fonts
 		nerd-fonts.jetbrains-mono
+        nerd-fonts.caskaydia-mono
+        cascadia-code
 		nerd-fonts.mononoki
 		noto-fonts
 		noto-fonts-lgc-plus
@@ -25,7 +27,7 @@
 		targets = {
 			emacs.enable = false;
 			# neovim.enable = true;
-			# nixvim.enable = false;
+			nixvim.enable = false;
 			waybar.enable = false;
 			wofi.enable = false;
 			hyprland.enable = false;

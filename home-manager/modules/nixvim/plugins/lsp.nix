@@ -27,17 +27,30 @@
                     };
                 };
 
-                pylsp = {
+                basedpyright = {
+                    enable = true;
+                    package = null;
                     settings = {
-                        configurationSources = "pycodestyle";
                         plugins = {
-                            pycodestyle.enabled = true;
-                            pylsp_mypy.enabled = true;
-                            ruff.enabled = true;
+                            ruff = {
+                                enable = true;
+                                package = null;
+                            };
                         };
                     };
-                    enable = true;
                 };
+
+                # pylsp = {
+                #     settings = {
+                #         configurationSources = "pycodestyle";
+                #         plugins = {
+                #             pycodestyle.enabled = true;
+                #             pylsp_mypy.enabled = true;
+                #             ruff.enabled = true;
+                #         };
+                #     };
+                #     enable = true;
+                # };
                 eslint.enable = true;
                 emmet_ls = {
                     enable = true;
