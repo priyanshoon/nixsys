@@ -21,6 +21,17 @@
     pkgs.qmk-udev-rules
   ];
 
+    fileSystems."/home/priyanshoon/sohard" = {
+        device = "/dev/disk/by-uuid/23dbfcf5-e974-4f0a-9366-65ee6346c0a5";
+        fsType = "ext4";
+        options = [
+            "defaults"
+            "nofail"
+            "noatime"
+            "commit=60"
+        ];
+    };
+
 
   networking.hostName = hostname;
   system.stateVersion = stateVersion; # Did you read the comment?

@@ -1,6 +1,7 @@
 {
 	imports = [
 		./audio.nix
+        ./virtual-machine.nix
 		./locale.nix
         ./bluetooth.nix
 		./boot.nix
