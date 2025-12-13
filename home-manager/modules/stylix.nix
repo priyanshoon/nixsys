@@ -73,6 +73,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/makimaXdeath.png;
+		image = ../../wallpaper/reze.png;
 	};
 }
