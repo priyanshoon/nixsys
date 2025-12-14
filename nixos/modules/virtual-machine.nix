@@ -5,10 +5,5 @@
 
     boot.kernelModules = [ "kvm-intel" ];
 
-    users.users.priyanshoon = {
-        isNormalUser = true;
-        extraGroups = [ "libvirtd" "kvm" ];
-    };
-
     virtualisation.spiceUSBRedirection.enable = true;
 }
