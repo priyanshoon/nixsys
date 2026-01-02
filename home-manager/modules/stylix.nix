@@ -28,6 +28,7 @@
 			emacs.enable = false;
 			# neovim.enable = true;
 			nixvim.enable = false;
+            ghostty.enable = false;
 			waybar.enable = false;
 			wofi.enable = false;
 			hyprland.enable = false;

@@ -9,10 +9,14 @@
     mpv
     obs-studio
     signal-desktop
+    burpsuite
     obsidian
     evince
     gimp3
     pavucontrol
+    jetbrains.clion
+    libreoffice-qt
+    hunspell
 
     # CLI utils
     bc

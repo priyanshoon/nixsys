@@ -30,6 +30,7 @@
         package = config.boot.kernelPackages.nvidiaPackages.stable;
         
         prime = {
+            # sync.enable = true;
             offload = {
                 enable = true;
                 enableOffloadCmd = true;
