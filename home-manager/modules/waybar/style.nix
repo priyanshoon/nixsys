@@ -6,7 +6,8 @@ let
     font_weight = "bold";
     text_color = "#FBF1C7";
     background_0 = "#1D2021";
-    background_1 = "#282828";
+    # background_1 = "#282828";
+    background_1 = "#191617";
     border_color = "#A89984";
     red = "#CC241D";
     green = "#98971A";
@@ -15,6 +16,8 @@ let
     magenta = "#B16286";
     cyan = "#689D6A";
     orange = "#D65D0E";
+    greenish = "#8A9A7B";
+    yellowish = "#C5B28B";
     orange_bright = "#FE8019";
     opacity = "1";
     indicator_height = "2px";
@@ -51,7 +54,7 @@ in
       padding-left: 15px;
     }
     #workspaces button {
-      color: ${yellow};
+      color: ${yellowish};
       padding-left:  5px;
       padding-right: 5px;
       margin-right: 10px;
@@ -60,7 +63,7 @@ in
       color: ${text_color};
     }
     #workspaces button.active {
-      color: ${orange_bright};
+      color: ${greenish};
     }
 
     #clock {

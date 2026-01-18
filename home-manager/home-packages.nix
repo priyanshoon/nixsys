@@ -14,7 +14,7 @@
     evince
     gimp3
     pavucontrol
-    jetbrains.clion
+    ghidra-bin
     libreoffice-qt
     hunspell
 
@@ -41,6 +41,8 @@
     showmethekey
     udisks
     unzip
+    jq
+    file
     wget
     wl-clipboard
     wlr-randr

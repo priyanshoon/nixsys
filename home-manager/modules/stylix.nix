@@ -8,6 +8,7 @@
 	home.packages = with pkgs; [
 		dejavu_fonts
 		nerd-fonts.jetbrains-mono
+        nerd-fonts.anonymice
         nerd-fonts.caskaydia-mono
         cascadia-code
 		nerd-fonts.mononoki
@@ -23,11 +24,15 @@
 	stylix = {
 		enable = true;
 		polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa-dragon.yaml";
 		targets = {
 			emacs.enable = false;
 			# neovim.enable = true;
 			nixvim.enable = false;
+            qt = {
+                enable = true;
+                platform = "qtct";
+            };
             ghostty.enable = false;
 			waybar.enable = false;
 			wofi.enable = false;
@@ -67,13 +72,13 @@
 			};
 		};
 
-		iconTheme = {
+		icons = {
 			enable = true;
 			package = pkgs.papirus-icon-theme;
 			dark = "Papirus-Dark";
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/reze.png;
+		image = ../../wallpaper/toji.png;
 	};
 }

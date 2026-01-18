@@ -3,6 +3,8 @@
     enable = true;
     systemd.enable = true;
     settings = {
+        splash = false;
+
       env = [
         # Hint Electron apps to use Wayland
         "NIXOS_OZONE_WL,1"
@@ -73,9 +75,9 @@
         disable_hyprland_logo = true;
       };
 
-      windowrulev2 = [
-        "bordersize 0, floating:0, onworkspace:w[t1]"
-        "suppressevent maximize, class:.*"
+      windowrule = [
+        "border_size 0, match:float false, match:workspace w[t1]"
+        "suppress_event maximize, match:class .*"
       ];
 
       workspace = [
