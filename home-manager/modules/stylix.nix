@@ -27,7 +27,6 @@
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 		targets = {
 			emacs.enable = false;
-            tmux.enable = false;
 			# neovim.enable = true;
 			nixvim.enable = false;
             qt = {
