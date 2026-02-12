@@ -1,6 +1,7 @@
 {
 	imports = [
 		./audio.nix
+        ./docker.nix
         ./wireshark.nix
         # ./ollama.nix
         ./virtual-machine.nix

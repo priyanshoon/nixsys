@@ -1,23 +1,23 @@
 { ... }:
 let
   custom = {
-    font = "Mononoki Nerd Font";
+    font = "ComicShannsMono Nerd Font";
     font_size = "18px";
     font_weight = "bold";
     text_color = "#FBF1C7";
     background_0 = "#1D2021";
     # background_1 = "#282828";
-    background_1 = "#191617";
+    background_1 = "#141415";
     border_color = "#A89984";
     red = "#CC241D";
-    green = "#98971A";
+    green = "#b4d4cf";
     yellow = "#FABD2F";
     blue = "#458588";
     magenta = "#B16286";
     cyan = "#689D6A";
     orange = "#D65D0E";
-    greenish = "#8A9A7B";
-    yellowish = "#C5B28B";
+    greenish = "#b4d4cf";
+    yellowish = "#c4a7e7"; # purpleish
     orange_bright = "#FE8019";
     opacity = "1";
     indicator_height = "2px";

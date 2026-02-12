@@ -8,8 +8,8 @@
 	home.packages = with pkgs; [
 		dejavu_fonts
 		nerd-fonts.jetbrains-mono
+        nerd-fonts.comic-shanns-mono
         nerd-fonts.anonymice
-        nerd-fonts.caskaydia-mono
         cascadia-code
 		nerd-fonts.mononoki
 		noto-fonts
@@ -24,9 +24,10 @@
 	stylix = {
 		enable = true;
 		polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa-dragon.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 		targets = {
 			emacs.enable = false;
+            tmux.enable = false;
 			# neovim.enable = true;
 			nixvim.enable = false;
             qt = {
@@ -79,6 +80,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/toji.png;
+		image = ../../wallpaper/choso.png;
 	};
 }

@@ -47,7 +47,7 @@ in {
 		bind -r k select-pane -U
 		bind -r l select-pane -R
 
-        bind-key C-t run-shell "tmux-sessionizer"
+        bind-key C-t run-shell "tmux neww tmux-sessionizer"
 		'';
 	};
 }

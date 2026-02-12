@@ -1,6 +1,7 @@
 {
     imports = [
         ./color.nix
+        ./trouble.nix
         ./lsp.nix
         ./fugitive.nix
         ./snippets.nix

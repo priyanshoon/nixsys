@@ -36,6 +36,7 @@
         inccommand = "split";
         cursorline = false;
         scrolloff = 10;
+        winborder = "rounded";
         hlsearch = false;
 	};
 }

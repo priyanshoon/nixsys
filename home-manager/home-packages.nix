@@ -9,12 +9,10 @@
     mpv
     obs-studio
     signal-desktop
-    burpsuite
     obsidian
     evince
     gimp3
     pavucontrol
-    ghidra-bin
     libreoffice-qt
     hunspell
 
@@ -27,6 +25,7 @@
     fzf
     grimblast
     htop
+    opencode
     ntfs3g
     mediainfo
     microfetch
@@ -55,6 +54,7 @@
     ghostty
     python311
     libgcc
+    typst
     gcc
 
     # WM stuff

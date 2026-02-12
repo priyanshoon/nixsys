@@ -16,19 +16,35 @@
         #     };
         # };
 
-        colorschemes.kanagawa = {
+        colorschemes.vague = {
             enable = true;
             settings = {
-                theme = "dragon";
                 transparent = true;
-                background = {
-                    dark = "dragon";
-                    light = "lotus";
-                    
-                };
             };
         };
 
+        # colorschemes.kanagawa = {
+        #     enable = true;
+        #     settings = {
+        #         theme = "dragon";
+        #         commentStyle = {
+        #             italic = true;
+        #         };
+        #         keywordStyle = {
+        #             italic = true;
+        #         };
+        #         functionStyle = {
+        #             italic = true;
+        #         };
+        #         transparent = true;
+        #         background = {
+        #             dark = "dragon";
+        #             light = "lotus";
+        #         };
+        #         undercurl = false;
+        #     };
+        # };
+        #
         # colorschemes.gruvbox = {
         #     enable = true;
         #     settings = {

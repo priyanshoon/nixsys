@@ -58,7 +58,7 @@
                 };
                 ts_ls = {
                     enable = true;
-                    filetypes = [ "typescript" "javascript" ];
+                    filetypes = [ "typescript" "javascript" "tsx" "jsx" ];
                 };
                 # phpactor = {
                 #     enable = true;
@@ -67,6 +67,14 @@
                     enable = true;
                 };
                 nixd.enable = true;
+
+                # rust_analyzer = {
+                #     enable = true;
+                #     package = null;
+                #     cargoPackage = null;
+                #     installRustfmt = true;
+                # };
+                
                 astro = {
                     enable = true;
                     package = null;
