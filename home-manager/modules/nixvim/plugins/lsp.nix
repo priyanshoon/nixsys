@@ -68,12 +68,11 @@
                 };
                 nixd.enable = true;
 
-                # rust_analyzer = {
-                #     enable = true;
-                #     package = null;
-                #     cargoPackage = null;
-                #     installRustfmt = true;
-                # };
+                rust_analyzer = {
+                    enable = true;
+                    installCargo = false;
+                    installRustc = false;
+                };
                 
                 astro = {
                     enable = true;

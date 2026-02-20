@@ -41,6 +41,8 @@
     udisks
     unzip
     jq
+    gnumake
+    btop
     file
     wget
     wl-clipboard

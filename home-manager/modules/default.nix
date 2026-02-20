@@ -2,7 +2,6 @@
 	imports = [
 		./zsh.nix
 		./hyprland
-        ./helix.nix
         ./zed.nix
         ./emacs.nix
         ./mako.nix

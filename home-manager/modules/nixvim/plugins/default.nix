@@ -3,7 +3,8 @@
         ./color.nix
         ./trouble.nix
         ./lsp.nix
-        ./fugitive.nix
+        # ./fugitive.nix
+        ./lazygit.nix
         ./snippets.nix
         ./harpoon.nix
         ./treesitter.nix
