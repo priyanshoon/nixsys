@@ -31,11 +31,11 @@
 
 	outputs = {self, nixpkgs, home-manager, ...}@inputs: let
 		system = "x86_64-linux";
-		homeStateVersion = "25.05";
+		homeStateVersion = "25.11";
 		user = "priyanshoon";
 		hosts = [
-			{ hostname = "expansion"; stateVersion = "25.05"; }
-			{ hostname = "domain"; stateVersion = "25.05"; }
+			{ hostname = "expansion"; stateVersion = "25.11"; }
+			{ hostname = "domain"; stateVersion = "25.11"; }
 		];
 		
 		makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {

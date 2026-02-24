@@ -34,6 +34,8 @@
                 platform = "qtct";
             };
             ghostty.enable = false;
+            bat.enable = false;
+            alacritty.enable = false;
 			waybar.enable = false;
 			wofi.enable = false;
 			hyprland.enable = false;
@@ -43,9 +45,9 @@
             };
 		};
 		cursor = {
-			name = "Banana";
+			name = "Bibata-Modern-Classic";
 			size = 24;
-			package = pkgs.banana-cursor;
+			package = pkgs.bibata-cursors;
 		};
 
 		fonts = {
