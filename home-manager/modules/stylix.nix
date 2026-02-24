@@ -24,25 +24,19 @@
 	stylix = {
 		enable = true;
 		polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/0x96f.yaml";
 		targets = {
 			emacs.enable = false;
-			# neovim.enable = true;
 			nixvim.enable = false;
             qt = {
                 enable = true;
                 platform = "qtct";
             };
-            ghostty.enable = false;
             bat.enable = false;
             alacritty.enable = false;
 			waybar.enable = false;
 			wofi.enable = false;
 			hyprland.enable = false;
-            firefox = {
-                enable = true;
-                profileNames = [ "ybz00pzr.default" ];
-            };
 		};
 		cursor = {
 			name = "Bibata-Modern-Classic";
@@ -81,6 +75,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/choso.png;
+		image = ../../wallpaper/bigears.png;
 	};
 }

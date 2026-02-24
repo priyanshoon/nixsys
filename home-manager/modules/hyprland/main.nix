@@ -23,7 +23,7 @@
       monitor = "HDMI-A-1,1920x1080@74.973000,auto,1";
 
       "$mainMod" = "SUPER";
-      "$terminal" = "ghostty";
+      "$terminal" = "alacritty";
       "$browser" = "brave";
       "$menu" = "wofi --show drun";
 

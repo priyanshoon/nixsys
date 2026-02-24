@@ -53,7 +53,6 @@
 
     # Coding stuff 
     nodejs
-    ghostty
     python311
     libgcc
     typst
