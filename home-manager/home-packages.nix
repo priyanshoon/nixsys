@@ -53,6 +53,7 @@
     nodejs
     python312
     libgcc
+    glibc
     typst
     gcc
 
