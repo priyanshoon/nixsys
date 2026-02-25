@@ -13,6 +13,8 @@
                 tmux = "tmux -u";
                 nix-clean = "sudo nix-collect-garbage --delete-older-than 2d --cores 16 && nix-collect-garbage --delete-older-than 2d --cores 16";
                 vi = "nvim";
+                lg = "lazygit";
+                g = "git";
             };
 
             history.size = 10000;

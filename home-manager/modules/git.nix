@@ -8,4 +8,5 @@
         };
     };
   };
+  programs.lazygit.enable = true;
 }
