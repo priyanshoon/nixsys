@@ -17,12 +17,10 @@
     hunspell
 
     # CLI utils
-    bc
     brightnessctl
     cliphist
     ffmpeg
     ffmpegthumbnailer
-    fzf
     grimblast
     htop
     opencode
@@ -53,7 +51,7 @@
 
     # Coding stuff 
     nodejs
-    python311
+    python312
     libgcc
     typst
     gcc
