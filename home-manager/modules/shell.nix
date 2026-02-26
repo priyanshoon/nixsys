@@ -1,6 +1,9 @@
 { config, ... }: {
-
     programs = {
+        bash = {
+            enable = true;
+        };
+
         zsh = {
             enable = true;
             enableCompletion = true;
