@@ -1,6 +1,6 @@
 {
 	imports = [
-		./zsh.nix
+		./shell.nix
 		./hyprland
         ./zed.nix
         ./emacs.nix
