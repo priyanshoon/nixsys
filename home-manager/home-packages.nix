@@ -39,7 +39,6 @@
     udisks
     unzip
     jq
-    gnumake
     btop
     file
     wget
@@ -54,6 +53,8 @@
     python312
     libgcc
     glibc
+    cmake
+    gnumake
     typst
     gcc
 
