@@ -63,7 +63,10 @@
       };
 
       animations = {
-        enabled = false;
+        enabled = true;
+        # animation = [
+        #
+        # ];
       };
 
       # gestures = {
