@@ -63,7 +63,7 @@
       };
 
       animations = {
-        enabled = true;
+        enabled = false;
         # animation = [
         #
         # ];

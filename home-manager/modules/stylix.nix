@@ -76,6 +76,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/bigears.png;
+		image = ../../wallpaper/gruvbox_girl.png;
 	};
 }

@@ -2,6 +2,7 @@
     imports = [
         ./color.nix
         ./trouble.nix
+        # ./opencode.nix
         ./lsp.nix
         # ./fugitive.nix
         ./lazygit.nix

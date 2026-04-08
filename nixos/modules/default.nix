@@ -2,6 +2,8 @@
 	imports = [
 		./audio.nix
         ./gpg.nix
+        ./ld.nix
+        ./jellyfin.nix
         ./docker.nix
         ./wireshark.nix
         # ./ollama.nix

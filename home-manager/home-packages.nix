@@ -9,6 +9,7 @@
     mpv
     obs-studio
     signal-desktop
+    shotcut
     obsidian
     evince
     gimp3
