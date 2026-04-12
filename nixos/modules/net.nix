@@ -1,3 +1,16 @@
 {
 	networking.networkmanager.enable = true;
+    networking.extraHosts = ''
+    127.0.0.1 4chan.org
+    127.0.0.1 www.4chan.org
+    '';
+
+    services.openssh = {
+        enable = true;
+        banner = "you entered the nix realm, be careful with what you do";
+        settings = {
+            PasswordAuthentication = false;
+            PermitRootLogin = "no";
+        };
+    };
 }

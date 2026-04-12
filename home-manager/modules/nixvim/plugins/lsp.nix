@@ -40,17 +40,6 @@
                     };
                 };
 
-                # pylsp = {
-                #     settings = {
-                #         configurationSources = "pycodestyle";
-                #         plugins = {
-                #             pycodestyle.enabled = true;
-                #             pylsp_mypy.enabled = true;
-                #             ruff.enabled = true;
-                #         };
-                #     };
-                #     enable = true;
-                # };
                 eslint.enable = true;
                 emmet_ls = {
                     enable = true;
@@ -133,7 +122,7 @@
         extraConfigLua = ''
             vim.diagnostic.config({
                     virtual_text = false,  -- must be disabled!
-                    underline = true,
+                    underline = false,
                     signs = true,
                     })
         '';

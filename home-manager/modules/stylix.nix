@@ -24,7 +24,7 @@
 	stylix = {
 		enable = true;
 		polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/0x96f.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 		targets = {
 			emacs.enable = false;
 			nixvim.enable = false;
@@ -76,6 +76,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/gruvbox_girl.png;
+		image = ../../wallpaper/kenjaku.png;
 	};
 }
