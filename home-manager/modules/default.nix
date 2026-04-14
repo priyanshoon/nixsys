@@ -3,7 +3,7 @@
 		./shell.nix
 		./hyprland
         ./zed.nix
-        # ./vscode.nix
+        ./vscode.nix
         ./emacs.nix
         ./mako.nix
         ./brave.nix
