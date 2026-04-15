@@ -3,6 +3,7 @@
         enable = true;
         extensions = with pkgs.vscode-extensions; [
           bbenoist.nix
+          ms-vscode.cpptools
           ms-python.python
           golang.go
           twxs.cmake
