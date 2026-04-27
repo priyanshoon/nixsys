@@ -3,7 +3,7 @@
         enable = true;
         theme = "rose_pine";
         settings = {
-            window.opacity = 0.93;
+            window.opacity = 0.88;
             window.blur = true;
             colors = {
                 primary = {
@@ -12,8 +12,8 @@
                 };
             };
             font.normal = {
-                family = "ComicShannsMono Nerd Font Mono";
-                # family = "Mononoki Nerd Font Mono";
+                # family = "ComicShannsMono Nerd Font Mono";
+                family = "Mononoki Nerd Font Mono";
                 style = "Regular";
             };
         };

@@ -76,6 +76,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/kenjaku.png;
+		image = ../../wallpaper/jjk.png;
 	};
 }
