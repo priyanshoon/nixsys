@@ -27,28 +27,28 @@
                     };
                 };
 
-                basedpyright = {
-                    enable = true;
-                    package = null;
-                    settings = {
-                        plugins = {
-                            ruff = {
-                                enable = true;
-                                package = null;
-                            };
-                        };
-                    };
-                };
+                # basedpyright = {
+                #     enable = true;
+                #     package = null;
+                #     settings = {
+                #         plugins = {
+                #             ruff = {
+                #                 enable = true;
+                #                 package = null;
+                #             };
+                #         };
+                #     };
+                # };
 
-                eslint.enable = true;
-                emmet_ls = {
-                    enable = true;
-                    filetypes = [ "html" "astro" ];
-                };
-                ts_ls = {
-                    enable = true;
-                    filetypes = [ "typescript" "javascript" "tsx" "jsx" ];
-                };
+                # eslint.enable = true;
+                # emmet_ls = {
+                #     enable = true;
+                #     filetypes = [ "html" "astro" ];
+                # };
+                # ts_ls = {
+                #     enable = true;
+                #     filetypes = [ "typescript" "javascript" "tsx" "jsx" ];
+                # };
                 # phpactor = {
                 #     enable = true;
                 # };
@@ -63,12 +63,12 @@
                     installRustc = false;
                 };
                 
-                astro = {
-                    enable = true;
-                    package = null;
-                    cmd = [ "astro-ls" "--stdio" ];
-                    filetypes = [ "astro" ];
-                };
+                # astro = {
+                #     enable = true;
+                #     package = null;
+                #     cmd = [ "astro-ls" "--stdio" ];
+                #     filetypes = [ "astro" ];
+                # };
             };
 
             onAttach = ''
