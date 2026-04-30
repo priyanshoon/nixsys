@@ -11,7 +11,6 @@
 # no need to set devices, disko will add all devices that have a EF02 partition to the list already
 # devices = [ ];
     enable = true;
-    version = 2;
     device = "nodev";
     efiInstallAsRemovable = true;
     efiSupport = true;
