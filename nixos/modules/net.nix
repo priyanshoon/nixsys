@@ -13,10 +13,10 @@
 
     services.openssh = {
         enable = true;
+        banner = "yoooo, bitch. what's up!";
         settings = {
             PasswordAuthentication = false;
             PermitRootLogin = "no";
-            Banner = "you entered the nix realm, be careful with what you do";
         };
     };
 }
