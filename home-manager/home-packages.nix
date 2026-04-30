@@ -6,7 +6,6 @@
 
     # Desktop apps
     imv
-    mpv
     obs-studio
     signal-desktop
     shotcut
@@ -24,7 +23,6 @@
     ffmpegthumbnailer
     grimblast
     htop
-    opencode
     ntfs3g
     mediainfo
     sops
