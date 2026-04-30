@@ -16,6 +16,7 @@
         banner = "yoooo, bitch. what's up!";
         settings = {
             PasswordAuthentication = false;
+            Banner = "/etc/ssh/banner";
             PermitRootLogin = "no";
         };
     };
