@@ -45,7 +45,7 @@
 			{ hostname = "domain"; stateVersion = "25.11"; }
 		];
 		
-		makeSystem = { hostname, stateVersion, sops-nix }: nixpkgs.lib.nixosSystem {
+		makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
 			system = system;
 			specialArgs = {
 				inherit inputs stateVersion hostname user;
@@ -53,7 +53,6 @@
 			
 			modules = [
 				./hosts/${hostname}/configuration.nix
-                sops-nix.nixosModules.sops
 			];
 		};
 	in {
