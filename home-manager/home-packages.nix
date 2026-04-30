@@ -47,7 +47,6 @@
     wl-clipboard
     wlr-randr
     bluetui
-    yt-dlp
     zip
 
     # Coding stuff 
