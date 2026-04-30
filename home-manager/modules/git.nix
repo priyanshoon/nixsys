@@ -3,19 +3,19 @@
         g = "git";
         lg = "lazygit";
     };
-  programs.git = {
-    enable = true;
-    signing = {
-        key = "~/.ssh/id_ed25519.pub";
-        signByDefault = true;
-    };
-    settings = {
-        user = {
-            email = "priyanshoon.pg@gmail.com";
-            name = "Priyanshu Gupta";
+    programs.git = {
+        enable = true;
+        signing = {
+            key = "~/.ssh/id_ed25519.pub";
+            signByDefault = true;
         };
-        gpg.format = "ssh";
+        settings = {
+            user = {
+                email = "priyanshoon.pg@gmail.com";
+                name = "Priyanshu Gupta";
+            };
+            gpg.format = "ssh";
+        };
     };
-  };
-  programs.lazygit.enable = true;
+    programs.lazygit.enable = true;
 }

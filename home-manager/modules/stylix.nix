@@ -26,6 +26,7 @@
 		polarity = "dark";
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 		targets = {
+            firefox.profileNames = [ "default" ];
 			emacs.enable = false;
 			nixvim.enable = false;
             qt = {
@@ -76,6 +77,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/jjk.png;
+		image = ../../wallpaper/horror.png;
 	};
 }

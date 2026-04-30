@@ -3,11 +3,11 @@
         enable = true;
         theme = "rose_pine";
         settings = {
-            window.opacity = 0.88;
+            window.opacity = 0.93;
             window.blur = true;
             colors = {
                 primary = {
-                    background = "#181818";
+                    background = "#1D1C26";
                     foreground = "#cdcdcd";
                 };
             };

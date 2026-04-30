@@ -1,9 +1,9 @@
 {
 	imports = [
 		./shell.nix
+        ./gtk.nix
 		./hyprland
         ./zed.nix
-        ./vscode.nix
         ./emacs.nix
         ./mako.nix
         ./brave.nix

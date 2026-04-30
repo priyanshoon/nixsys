@@ -23,6 +23,11 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
+        sops-nix = {
+            url = "github:Mic92/sops-nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+
 		nixvim = {
 			url = "github:nix-community/nixvim";
 			inputs.nixpkgs.follows = "nixpkgs";
@@ -40,7 +45,7 @@
 			{ hostname = "domain"; stateVersion = "25.11"; }
 		];
 		
-		makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
+		makeSystem = { hostname, stateVersion, sops-nix }: nixpkgs.lib.nixosSystem {
 			system = system;
 			specialArgs = {
 				inherit inputs stateVersion hostname user;
@@ -48,6 +53,7 @@
 			
 			modules = [
 				./hosts/${hostname}/configuration.nix
+                sops-nix.nixosModules.sops
 			];
 		};
 	in {

@@ -18,6 +18,7 @@
             download = "\$HOME/downloads";
             pictures = "\$HOME/pics";
             videos = "\$HOME/vids";
+            setSessionVariables = true;
         };
     };
 }

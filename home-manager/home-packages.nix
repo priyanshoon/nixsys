@@ -27,6 +27,7 @@
     opencode
     ntfs3g
     mediainfo
+    sops
     microfetch
     inetutils
     man-db
@@ -65,6 +66,5 @@
     xdg-desktop-portal-hyprland
 
     google-chrome
-    qbittorrent
   ];
 }
