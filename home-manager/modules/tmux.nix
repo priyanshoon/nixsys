@@ -33,8 +33,10 @@ in {
 		baseIndex = 1;
 		escapeTime = 0;
 		keyMode = "vi";
-		terminal = "screen-256color";
+		terminal = "tmux-256color";
 		extraConfig = ''
+        set -as terminal-overrides ',*:sitm=\E[3m'
+
 		unbind C-b
 		set-option -g prefix C-a
 		bind-key C-a send-prefix
