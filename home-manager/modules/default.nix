@@ -3,8 +3,8 @@
 		./shell.nix
         ./gtk.nix
 		./hyprland
-        ./zed.nix
         ./emacs.nix
+        ./zed
         ./mako.nix
         ./brave.nix
         ./direnv.nix

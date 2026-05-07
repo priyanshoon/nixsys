@@ -1,0 +1,11 @@
+[
+    "nix"
+    "toml"
+    "elixir"
+    "make"
+    "dockerfile"
+    "docker-compose"
+    "html"
+    "json"
+    "helm"
+]

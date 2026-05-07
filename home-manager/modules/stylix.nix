@@ -26,19 +26,20 @@
 		polarity = "dark";
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 		targets = {
-            firefox.profileNames = [ "default" ];
+		  firefox.profileNames = [ "default" ];
 			emacs.enable = false;
 			nixvim.enable = false;
-            qt = {
-                enable = true;
-                platform = "qtct";
-            };
-            bat.enable = false;
-            alacritty.enable = false;
-            vscode.enable = false;
+			qt = {
+			  enable = true;
+				platform = "qtct";
+			};
+			bat.enable = false;
+			alacritty.enable = false;
+			vscode.enable = false;
 			waybar.enable = false;
 			wofi.enable = false;
 			hyprland.enable = false;
+			zed.enable = false;
 		};
 		cursor = {
 			name = "Bibata-Modern-Classic";
