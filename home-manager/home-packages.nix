@@ -6,6 +6,7 @@
 
     # Desktop apps
     imv
+    mpv
     obs-studio
     signal-desktop
     shotcut
@@ -28,6 +29,7 @@
     sops
     microfetch
     inetutils
+    opencode
     man-db
     man-pages
     qmk

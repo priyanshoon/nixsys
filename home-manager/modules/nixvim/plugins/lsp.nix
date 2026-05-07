@@ -27,18 +27,16 @@
                     };
                 };
 
-                # basedpyright = {
-                #     enable = true;
-                #     package = null;
-                #     settings = {
-                #         plugins = {
-                #             ruff = {
-                #                 enable = true;
-                #                 package = null;
-                #             };
-                #         };
-                #     };
-                # };
+                basedpyright = {
+                    enable = true;
+                    settings = {
+                        plugins = {
+                            ruff = {
+                                enable = true;
+                            };
+                        };
+                    };
+                };
 
                 # eslint.enable = true;
                 # emmet_ls = {
@@ -55,6 +53,7 @@
                 clangd = {
                     enable = true;
                 };
+
                 nixd.enable = true;
 
                 rust_analyzer = {
