@@ -64,13 +64,17 @@
                     installCargo = false;
                     installRustc = false;
                 };
+
+                mdx-analyzer = {
+                    enable = true;
+                };
                 
-                # astro = {
-                #     enable = true;
-                #     package = null;
-                #     cmd = [ "astro-ls" "--stdio" ];
-                #     filetypes = [ "astro" ];
-                # };
+                astro = {
+                    enable = true;
+                    package = null;
+                    cmd = [ "astro-ls" "--stdio" ];
+                    filetypes = [ "astro" ];
+                };
             };
 
             onAttach = ''
