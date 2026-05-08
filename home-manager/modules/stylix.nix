@@ -9,7 +9,6 @@
 		dejavu_fonts
 		nerd-fonts.jetbrains-mono
         nerd-fonts.comic-shanns-mono
-        nerd-fonts.anonymice
         cascadia-code
 		nerd-fonts.mononoki
 		noto-fonts
