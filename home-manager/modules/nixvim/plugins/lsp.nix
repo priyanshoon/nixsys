@@ -38,6 +38,9 @@
                     };
                 };
 
+                ruff = {
+                    enable = true;
+                };
                 # eslint.enable = true;
                 # emmet_ls = {
                 #     enable = true;
