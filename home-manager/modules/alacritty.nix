@@ -4,7 +4,7 @@
         theme = "rose_pine";
         settings = {
             window.opacity = 0.93;
-            window.blur = true;
+#            window.blur = true;
             colors = {
                 primary = {
                     background = "#1D1C20";

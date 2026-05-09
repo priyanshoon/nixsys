@@ -28,6 +28,7 @@
     mediainfo
     sops
     microfetch
+    irssi
     inetutils
     opencode
     man-db

@@ -34,6 +34,7 @@
 			};
 			bat.enable = false;
 			alacritty.enable = false;
+            ghostty.enable = false;
 			vscode.enable = false;
 			waybar.enable = false;
 			wofi.enable = false;
