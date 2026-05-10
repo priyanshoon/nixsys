@@ -64,7 +64,5 @@
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-
-    google-chrome
   ];
 }
