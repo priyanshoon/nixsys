@@ -58,7 +58,7 @@
         };
 
         blur = {
-          enabled = true;
+          enabled = false;
         };
       };
 

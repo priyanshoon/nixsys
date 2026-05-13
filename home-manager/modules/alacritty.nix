@@ -1,13 +1,14 @@
 {
 	programs.alacritty = {
         enable = true;
-        theme = "rose_pine";
+        theme = "vesper";
         settings = {
-            window.opacity = 0.93;
+            window.opacity = 0.87;
 #            window.blur = true;
             colors = {
                 primary = {
-                    background = "#1D1C20";
+                    # background = "#1D1C20";
+                    background = "#101010";
                     foreground = "#cdcdcd";
                 };
             };

@@ -23,7 +23,7 @@
 	stylix = {
 		enable = true;
 		polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/vesper.yaml";
 		targets = {
 		  firefox.profileNames = [ "default" ];
 			emacs.enable = false;
@@ -78,6 +78,6 @@
 			light = "Papirus-Light";
 		};
 
-		image = ../../wallpaper/horror.png;
+		image = ../../wallpaper/reze_san.png;
 	};
 }
