@@ -3,7 +3,7 @@
         enable = true;
         theme = "vesper";
         settings = {
-            window.opacity = 0.87;
+            window.opacity = 0.80;
 #            window.blur = true;
             colors = {
                 primary = {
@@ -13,8 +13,8 @@
                 };
             };
             font.normal = {
-                # family = "ComicShannsMono Nerd Font Mono";
-                family = "Mononoki Nerd Font Mono";
+                family = "ComicShannsMono Nerd Font Mono";
+                # family = "Mononoki Nerd Font Mono";
                 # family = "SauceCodePro Nerd Font Mono";
                 style = "Regular";
             };

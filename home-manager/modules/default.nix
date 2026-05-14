@@ -2,7 +2,7 @@
 	imports = [
 		./shell.nix
         ./gtk.nix
-        ./ghostty.nix
+        # ./ghostty.nix
 		./hyprland
         ./emacs.nix
         ./zed

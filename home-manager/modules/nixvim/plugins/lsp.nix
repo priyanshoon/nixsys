@@ -27,16 +27,19 @@
                     };
                 };
 
-                basedpyright = {
+                pyrefly = {
                     enable = true;
-                    settings = {
-                        plugins = {
-                            ruff = {
-                                enable = true;
-                            };
-                        };
-                    };
                 };
+                # basedpyright = {
+                #     enable = true;
+                #     settings = {
+                #         plugins = {
+                #             ruff = {
+                #                 enable = true;
+                #             };
+                #         };
+                #     };
+                # };
 
                 ruff = {
                     enable = true;
