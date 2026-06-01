@@ -1,4 +1,4 @@
-# My NixOs Configurations
+# My NixOS Configurations
 
 ## Devices
 - Domain (laptop)
