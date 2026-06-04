@@ -22,16 +22,16 @@
     pkgs.qmk-udev-rules
   ];
 
-   fileSystems."/home/priyanshoon/sohard" = {
-       device = "/dev/disk/by-uuid/0c9b0fb1-ae39-47cf-ba67-5b8b8053773f";
-       fsType = "ext4";
-       options = [
-           "defaults"
-           "nofail"
-           "noatime"
-           "commit=60"
-       ];
-   };
+   # fileSystems."/home/priyanshoon/sohard" = {
+   #     device = "/dev/disk/by-uuid/0c9b0fb1-ae39-47cf-ba67-5b8b8053773f";
+   #     fsType = "ext4";
+   #     options = [
+   #         "defaults"
+   #         "nofail"
+   #         "noatime"
+   #         "commit=60"
+   #     ];
+   # };
 
 
   networking.hostName = hostname;

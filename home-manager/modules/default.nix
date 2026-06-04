@@ -5,7 +5,7 @@
         # ./ghostty.nix
 		./hyprland
         ./emacs.nix
-        ./zed
+        # ./zed
         ./mako.nix
         ./brave.nix
         ./direnv.nix

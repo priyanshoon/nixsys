@@ -23,10 +23,10 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-        sops-nix = {
-            url = "github:Mic92/sops-nix";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
+        # sops-nix = {
+        #     url = "github:Mic92/sops-nix";
+        #     inputs.nixpkgs.follows = "nixpkgs";
+        # };
 
 		nixvim = {
 			url = "github:nix-community/nixvim";
@@ -38,11 +38,11 @@
 
 	outputs = {self, nixpkgs, home-manager, ...}@inputs: let
 		system = "x86_64-linux";
-		homeStateVersion = "25.11";
+		homeStateVersion = "26.05";
 		user = "priyanshoon";
 		hosts = [
-			{ hostname = "expansion"; stateVersion = "25.11"; }
-			{ hostname = "domain"; stateVersion = "25.11"; }
+			{ hostname = "expansion"; stateVersion = "26.05"; }
+			{ hostname = "domain"; stateVersion = "26.05"; }
 		];
 		
 		makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {

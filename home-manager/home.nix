@@ -2,12 +2,7 @@
 	imports = [
 		./modules
 		./home-packages.nix
-        inputs.sops-nix.homeModules.sops
 	];
-
-    sops.defaultSopsFile = ../secrets/secrets.yaml;
-    sops.age.keyFile = "/home/priyanshoon/.config/sops/age/keys.txt";
-    sops.secrets.example-key = {};
 
 	home = {
 		username = user;
